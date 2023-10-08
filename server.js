@@ -33,6 +33,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+app.set('trust proxy', 1); // patch for new ip boundation
+
 app.use(express.static(path.resolve(__dirname, './client/dist')));
 app.use(cookieParser());
 app.use(express.json());

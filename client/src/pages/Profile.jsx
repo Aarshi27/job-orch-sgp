@@ -4,7 +4,7 @@ import { useOutletContext, redirect } from 'react-router-dom';
 import { Form } from 'react-router-dom';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
-
+import { FaUserCircle } from 'react-icons/fa';
 export const action =
   (queryClient) =>
   async ({ request }) => {
