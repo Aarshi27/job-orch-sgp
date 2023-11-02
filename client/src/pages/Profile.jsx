@@ -2,6 +2,7 @@ import { FormRow, SubmitBtn } from '../components';
 import Wrapper from '../assets/wrappers/DashboardFormPage';
 import { useOutletContext, redirect } from 'react-router-dom';
 import { Form } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
 
@@ -32,7 +33,6 @@ const Profile = () => {
 
   return (
     <Wrapper>
-
       <h4 className='form-title'>Profile</h4>
       {user.avatar ? (
           <img src={user.avatar} alt='avatar' style={{height:100, width:100}} className='img' />
